@@ -2,14 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..600&family=Inter:wght@400;500;600&display=swap');
 
 :root {
-  --bg: #e7e6e2;          /* Sleek light (lightened #e2e1dd) */
-  --bg-2: #dcdad3;
-  --paper: #f1f0ec;
+  --bg: #f4f3ef;          /* Subtle warm off-white */
+  --bg-2: #eceae4;
+  --paper: #fbfbf9;
   --ink: #1e1c1d;         /* Black */
   --brown: #533824;       /* Coffee */
   --ink-2: #5c5955;
-  --ink-3: #8e8a82;       /* Taupe-grey */
-  --line: #cdcabf;
+  --ink-3: #948f87;       /* Taupe-grey */
+  --line: #e4e1d8;
   --accent: #ff5630;      /* Bright highlight */
   --accent-dark: #e23d18;
   --radius: 16px;
@@ -50,7 +50,8 @@ a { color: inherit; text-decoration: none; }
 
 /* ---------- Sections / type ---------- */
 .section { padding: clamp(3.5rem, 9vw, 7rem) 0; }
-.eyebrow { font-size: 0.74rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); margin-bottom: 1.2rem; }
+.eyebrow { display: inline-flex; align-items: center; gap: 0.7rem; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-2); margin-bottom: 1.3rem; }
+.eyebrow::before { content: ""; width: 24px; height: 1px; background: var(--accent); }
 h1, h2, h3 { font-family: var(--serif); font-weight: 500; letter-spacing: -0.02em; line-height: 1.08; }
 .page-title { font-size: clamp(2.4rem, 6vw, 3.8rem); margin-bottom: 1rem; }
 .lead { font-size: clamp(1.1rem, 2.2vw, 1.35rem); color: var(--ink-2); max-width: 60ch; line-height: 1.55; }
@@ -63,7 +64,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; letter-spacing: -0.02e
 .hero-meta .badge { display: inline-flex; align-items: center; gap: 0.45rem; color: var(--ink); background: var(--paper); border: 1px solid var(--line); padding: 0.3rem 0.8rem; border-radius: 999px; letter-spacing: 0.04em; text-transform: none; font-size: 0.8rem; }
 .hero-meta .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 25%, transparent); }
 .hero-meta .spacer { margin-left: auto; }
-.hero h1 { font-size: clamp(3rem, 11vw, 7.6rem); font-weight: 600; letter-spacing: -0.015em; line-height: 0.96; }
+.hero h1 { font-size: clamp(3rem, 11vw, 7.6rem); font-weight: 500; letter-spacing: -0.01em; line-height: 0.98; }
 .hero h1 em { font-style: italic; color: var(--accent); }
 .hero-body { display: grid; grid-template-columns: 1fr 0.7fr; gap: clamp(2rem, 6vw, 4rem); align-items: end; margin-top: clamp(2rem, 5vw, 3.2rem); }
 .hero .role { font-family: var(--sans); font-size: clamp(0.95rem, 2vw, 1.12rem); color: var(--ink); font-weight: 600; margin: 0 0 1.2rem; letter-spacing: 0.01em; }
