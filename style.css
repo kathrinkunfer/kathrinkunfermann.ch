@@ -119,7 +119,13 @@ h1, h2, h3 { letter-spacing: -0.02em; line-height: 1.12; }
 }
 
 /* ---------- "Previously at" logo strip ---------- */
-.logos-strip { display: flex; flex-wrap: wrap; align-items: center; gap: clamp(1rem, 4vw, 2.6rem); }
+.logos-strip { display: flex; flex-wrap: wrap; align-items: center; gap: clamp(1.4rem, 4vw, 3rem); }
+.logos-strip a { display: inline-flex; align-items: center; transition: opacity .2s, transform .12s; opacity: 0.9; }
+.logos-strip a:hover { opacity: 1; transform: translateY(-1px); }
+.logo-img { width: auto; object-fit: contain; display: block; }
+.logo-irsuite { height: 26px; }
+.logo-ey { height: 48px; }
+.logo-hyatt { height: 22px; }
 .wordmark {
   display: inline-flex; align-items: center; font-weight: 800; letter-spacing: -0.02em;
   font-size: 1.35rem; line-height: 1; opacity: 0.85; transition: opacity .2s, transform .12s;
