@@ -2,19 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..600&family=Inter:wght@400;500;600&display=swap');
 
 :root {
-  --bg: #fdf7ef;          /* Warm cream */
-  --bg-2: #f6ecdd;
+  --bg: #f3f4f7;          /* Cool light grey */
+  --bg-2: #e8eaef;
   --paper: #ffffff;
-  --ink: #2a2540;         /* Friendly deep indigo */
-  --brown: #14807b;       /* Teal feature block */
-  --ink-2: #5c5570;
-  --ink-3: #968fa6;
-  --line: #efe4d3;
-  --accent: #ff6a3d;      /* Friendly coral */
-  --accent-dark: #e8512a;
-  --teal: #14a89f;
-  --yellow: #ffc24b;
-  --pink: #ff8fab;
+  --ink: #15171c;         /* Cool near-black */
+  --brown: #15171c;       /* Feature block (cool near-black) */
+  --ink-2: #474b54;
+  --ink-3: #898d97;
+  --line: #e1e3e9;
+  --accent: #3b2bff;      /* Punchy electric ultramarine */
+  --accent-dark: #2a1ce0;
   --radius: 16px;
   --maxw: 1120px;
   --serif: 'Playfair Display', Georgia, serif;
@@ -88,16 +85,13 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; letter-spacing: -0.02e
 .statement { background: var(--brown); color: #efe9e2; }
 .statement .wrap { padding-top: clamp(4rem,10vw,7rem); padding-bottom: clamp(4rem,10vw,7rem); }
 .statement p { font-family: var(--serif); font-size: clamp(1.8rem, 4.5vw, 3.2rem); font-weight: 400; line-height: 1.2; letter-spacing: -0.01em; max-width: 18ch; }
-.statement p em { font-style: italic; color: var(--yellow); }
+.statement p em { font-style: italic; color: #9d92ff; }
 
 /* ---------- Stat cards ---------- */
 .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(0.8rem, 2vw, 1.4rem); }
 .stat { padding: clamp(1.2rem, 3vw, 1.8rem) 0; border-top: 1.5px solid var(--ink); }
 .stat .num { font-family: var(--serif); font-size: clamp(2rem, 5vw, 3.1rem); font-weight: 500; letter-spacing: -0.03em; }
 .stat .num span { color: var(--accent); }
-.stat:nth-child(2) .num span { color: var(--teal); }
-.stat:nth-child(3) .num span { color: var(--pink); }
-.stat:nth-child(4) .num span { color: var(--yellow); }
 .stat .label { font-size: 0.88rem; color: var(--ink-2); margin-top: 0.4rem; }
 @media (max-width: 760px) { .stats { grid-template-columns: 1fr 1fr; } }
 
@@ -105,10 +99,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; letter-spacing: -0.02e
 .svc-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.1rem; }
 .svc-card { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: clamp(1.6rem, 3vw, 2.3rem); transition: transform .2s, box-shadow .2s; }
 .svc-card:hover { transform: translateY(-3px); box-shadow: 0 16px 40px rgba(26,24,20,0.07); }
-.svc-num { font-family: var(--serif); font-size: 1.4rem; color: var(--teal); }
-.svc-card:nth-child(2) .svc-num { color: var(--accent); }
-.svc-card:nth-child(3) .svc-num { color: var(--yellow); }
-.svc-card:nth-child(4) .svc-num { color: var(--pink); }
+.svc-num { font-family: var(--serif); font-size: 1.4rem; color: var(--accent); }
 .svc-card h3 { font-size: 1.4rem; margin: 0.7rem 0 0.7rem; }
 .svc-card p { color: var(--ink-2); font-size: 0.98rem; }
 @media (max-width: 760px) { .svc-grid { grid-template-columns: 1fr; } }
