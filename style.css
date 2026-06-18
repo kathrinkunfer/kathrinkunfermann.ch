@@ -1,21 +1,20 @@
 /* ---------- Kathrin Kunfermann — editorial portfolio ---------- */
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400&family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..600&family=Inter:wght@400;500;600&display=swap');
 
 :root {
-  --bg: #f4f0e0;          /* Linen */
-  --bg-2: #ebe6d2;
-  --paper: #faf7ec;
-  --ink: #3d524c;         /* Seaweed */
-  --ink-2: #5d6f68;
-  --ink-3: #8f998f;
-  --line: #ddd7c3;
-  --accent: #9f7cef;      /* Lavender */
-  --accent-dark: #7e5cd0;
-  --pistachio: #c6cd85;
-  --candyfloss: #f1cde2;
+  --bg: #e7e6e2;          /* Sleek light (lightened #e2e1dd) */
+  --bg-2: #dcdad3;
+  --paper: #f1f0ec;
+  --ink: #1e1c1d;         /* Black */
+  --brown: #533824;       /* Coffee */
+  --ink-2: #5c5955;
+  --ink-3: #8e8a82;       /* Taupe-grey */
+  --line: #cdcabf;
+  --accent: #ff5630;      /* Bright highlight */
+  --accent-dark: #e23d18;
   --radius: 16px;
   --maxw: 1120px;
-  --serif: 'Fraunces', Georgia, serif;
+  --serif: 'Playfair Display', Georgia, serif;
   --sans: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
@@ -64,7 +63,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; letter-spacing: -0.02e
 .hero-meta .badge { display: inline-flex; align-items: center; gap: 0.45rem; color: var(--ink); background: var(--paper); border: 1px solid var(--line); padding: 0.3rem 0.8rem; border-radius: 999px; letter-spacing: 0.04em; text-transform: none; font-size: 0.8rem; }
 .hero-meta .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 25%, transparent); }
 .hero-meta .spacer { margin-left: auto; }
-.hero h1 { font-size: clamp(3rem, 11vw, 8rem); font-weight: 500; letter-spacing: -0.04em; line-height: 0.92; }
+.hero h1 { font-size: clamp(3rem, 11vw, 7.6rem); font-weight: 600; letter-spacing: -0.015em; line-height: 0.96; }
 .hero h1 em { font-style: italic; color: var(--accent); }
 .hero-body { display: grid; grid-template-columns: 1fr 0.7fr; gap: clamp(2rem, 6vw, 4rem); align-items: end; margin-top: clamp(2rem, 5vw, 3.2rem); }
 .hero .role { font-family: var(--sans); font-size: clamp(0.95rem, 2vw, 1.12rem); color: var(--ink); font-weight: 600; margin: 0 0 1.2rem; letter-spacing: 0.01em; }
@@ -82,10 +81,10 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; letter-spacing: -0.02e
 .btn:active { transform: translateY(1px); }
 
 /* ---------- Statement / quote ---------- */
-.statement { background: var(--ink); color: var(--bg); }
+.statement { background: var(--brown); color: #efe9e2; }
 .statement .wrap { padding-top: clamp(4rem,10vw,7rem); padding-bottom: clamp(4rem,10vw,7rem); }
-.statement p { font-family: var(--serif); font-size: clamp(1.8rem, 4.5vw, 3.2rem); font-weight: 400; line-height: 1.2; letter-spacing: -0.02em; max-width: 18ch; }
-.statement p em { font-style: italic; color: var(--pistachio); }
+.statement p { font-family: var(--serif); font-size: clamp(1.8rem, 4.5vw, 3.2rem); font-weight: 400; line-height: 1.2; letter-spacing: -0.01em; max-width: 18ch; }
+.statement p em { font-style: italic; color: var(--accent); }
 
 /* ---------- Stat cards ---------- */
 .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(0.8rem, 2vw, 1.4rem); }
